@@ -1,8 +1,8 @@
 let appInd;
-const g = window.location.pathname === "/up";
-const a = window.location.pathname === "/yz";
-const c = window.location.pathname === "/gt";
-const t = window.top.location.pathname === "/rx";
+const g = window.location.pathname === "/intersteller/up";
+const a = window.location.pathname === "/intersteller/yz";
+const c = window.location.pathname === "/intersteller/gt";
+const t = window.top.location.pathname === "/intersteller/rx";
 
 function Span(name) {
   return name.split("").map(char => {
@@ -31,7 +31,7 @@ function handleClick(app) {
 
   if (app.local) {
     saveToLocal(Selected);
-    window.location.href = "rx";
+    window.location.href = "/intersteller/rx";
     if (t) {
       window.location.href = Selected;
     }
@@ -233,13 +233,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-let path = "/assets/json/a.min.json";
+let path = "/intersteller/assets/json/a.min.json";
 if (g) {
-  path = "/assets/json/g.min.json";
+  path = "/intersteller/assets/json/g.min.json";
 } else if (c) {
-  path = "/assets/json/t.min.json";
+  path = "/intersteller/assets/json/t.min.json";
 } else if (a) {
-  path = "/assets/json/a.min.json";
+  path = "/intersteller/assets/json/a.min.json";
 }
 fetch(path)
   .then(response => {
