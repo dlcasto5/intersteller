@@ -31,10 +31,10 @@ if (nav) {
     <a class="icon" href="/./"><img alt="nav" id="INImg" src="${LogoUrl}"/></a>
 </div>
 <div class="f-nav-right">
-    <a class="navbar-link" href="https://dlcasto4.github.io/intersteller/up"><i class="fa-solid fa-gamepad navbar-icon"></i><an>&#71;&#97;</an><an>&#109;&#101;&#115;</an></a>
-    <a class="navbar-link" href="https://dlcasto4.github.io/intersteller/yz"><i class="fa-solid fa-phone navbar-icon"></i><an>&#65;&#112;</an><an>&#112;&#115;</an></a>
-    ${window.top.location.pathname === "https://dlcasto4.github.io/intersteller/rx" ? "" : '<a class="navbar-link" href="/./rx"><i class="fa-solid fa-laptop navbar-icon"></i><an>&#84;&#97;</an><an>&#98;&#115;</an></a>'}
-    <a class="navbar-link" href="https://dlcasto4.github.io/intersteller/vk"><i class="fa-solid fa-gear navbar-icon settings-icon"></i><an>&#83;&#101;&#116;</an><an>&#116;&#105;&#110;&#103;</an></a>
+    <a class="navbar-link" href="games.html"><i class="fa-solid fa-gamepad navbar-icon"></i><an>&#71;&#97;</an><an>&#109;&#101;&#115;</an></a>
+    <a class="navbar-link" href="apps.html"><i class="fa-solid fa-phone navbar-icon"></i><an>&#65;&#112;</an><an>&#112;&#115;</an></a>
+    ${window.top.location.pathname === "/tabs.html" ? "" : '<a class="navbar-link" href="/./rx"><i class="fa-solid fa-laptop navbar-icon"></i><an>&#84;&#97;</an><an>&#98;&#115;</an></a>'}
+    <a class="navbar-link" href="settings.html"><i class="fa-solid fa-gear navbar-icon settings-icon"></i><an>&#83;&#101;&#116;</an><an>&#116;&#105;&#110;&#103;</an></a>
 </div>`;
   nav.innerHTML = html;
 }
@@ -45,12 +45,12 @@ const themeEle = document.createElement("link");
 themeEle.rel = "stylesheet";
 
 const themes = {
-  catppuccinMocha: "https://dlcasto4.github.io/intersteller/assets/css/themes/catppuccin/mocha.css",
-  catppuccinMacchiato: "https://dlcasto4.github.io/intersteller/assets/css/themes/catppuccin/macchiato.css",
-  catppuccinFrappe: "https://dlcasto4.github.io/intersteller/assets/css/themes/catppuccin/frappe.css",
-  catppuccinLatte: "https://dlcasto4.github.io/intersteller/assets/css/themes/catppuccin/latte.css",
-  Inverted: "https://dlcasto4.github.io/intersteller/assets/css/themes/colors/inverted.css",
-  sky: "https://dlcasto4.github.io/intersteller/assets/css/themes/colors/sky.css",
+  catppuccinMocha: "/assets/css/themes/catppuccin/mocha.css",
+  catppuccinMacchiato: "/assets/css/themes/catppuccin/macchiato.css",
+  catppuccinFrappe: "/assets/css/themes/catppuccin/frappe.css",
+  catppuccinLatte: "/assets/css/themes/catppuccin/latte.css",
+  Inverted: "/assets/css/themes/colors/inverted.css",
+  sky: "/assets/css/themes/colors/sky.css",
 };
 
 if (themes[themeid]) {
@@ -95,19 +95,19 @@ document.addEventListener("DOMContentLoaded", () => {
     Google: { name: "Google", icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/google.png" },
     "Savvas Realize": {
       name: "Savvas Realize",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/savvas-realize.png",
+      icon: "/assets/media/favicon/savvas-realize.png",
     },
     SmartPass: {
       name: "SmartPass",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/smartpass.png",
+      icon: "/assets/media/favicon/smartpass.png",
     },
     "World Book Online - Super Home": {
       name: "Super Home Page",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/wbo.ico",
+      icon: "/assets/media/favicon/wbo.ico",
     },
     "World Book Online - Student": {
       name: "WBO Student | Home Page",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/wbo.ico",
+      icon: "/assets/media/favicon/wbo.ico",
     },
     "World Book Online - Timelines": {
       name: "Timelines - Home Page",
@@ -115,171 +115,170 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     Naviance: {
       name: "Naviance Student",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/naviance.png",
+      icon: "/assets/media/favicon/naviance.png",
     },
     "PBS Learning Media": {
       name: "PBS LearningMedia | Teaching Resources For Students And Teachers",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/pbslearningmedia.ico",
+      icon: "/assets/media/favicon/pbslearningmedia.ico",
     },
     "PBS Learning Media Student Home": {
       name: "Student Homepage | PBS LearningMedia",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/pbslearningmedia.ico",
+      icon: "/assets/media/favicon/pbslearningmedia.ico",
     },
     Drive: {
       name: "My Drive - Google Drive",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/drive.png",
+      icon: "/assets/media/favicon/drive.png",
     },
     Classroom: { name: "Home", icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/classroom.png" },
     Schoology: {
       name: "Home | Schoology",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/schoology.png",
+      icon: "/assets/media/favicon/schoology.png",
     },
     Gmail: { name: "Gmail", icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/gmail.png" },
     Clever: {
       name: "Clever | Portal",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/clever.png",
+      icon: "/assets/media/favicon/clever.png",
     },
     Khan: {
       name: "Dashboard | Khan Academy",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/khan.png",
+      icon: "/assets/media/favicon/khan.png",
     },
     Dictionary: {
       name: "Dictionary.com | Meanings & Definitions of English Words",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/dictionary.png",
+      icon: "/assets/media/favicon/dictionary.png",
     },
     Thesaurus: {
       name: "Synonyms and Antonyms of Words | Thesaurus.com",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/thesaurus.png",
+      icon: "/assets/media/favicon/thesaurus.png",
     },
     Campus: {
       name: "Infinite Campus",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/campus.png",
+      icon: "/assets/media/favicon/campus.png",
     },
-    IXL: { name: "IXL | Dashboard", icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/ixl.png" },
-    Canvas: { name: "Dashboard", icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/canvas.png" },
-    LinkIt: { name: "Test Taker", icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/linkit.ico" },
-    Edpuzzle: { name: "Edpuzzle", icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/edpuzzle.png" },
+    IXL: { name: "IXL | Dashboard", icon: "/assets/media/favicon/ixl.png" },
+    Canvas: { name: "Dashboard", icon: "/assets/media/favicon/canvas.png" },
+    LinkIt: { name: "Test Taker", icon: "/assets/media/favicon/linkit.ico" },
+    Edpuzzle: { name: "Edpuzzle", icon: "/assets/media/favicon/edpuzzle.png" },
     "i-Ready Math": {
       name: "Math To Do, i-Ready",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/i-ready.ico",
+      icon: "/assets/media/favicon/i-ready.ico",
     },
     "i-Ready Reading": {
       name: "Reading To Do, i-Ready",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/i-ready.ico",
+      icon: "/assets/media/favicon/i-ready.ico",
     },
     "ClassLink Login": {
       name: "Login",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/classlink-login.png",
+      icon: "/assets/media/favicon/classlink-login.png",
     },
     "Google Meet": {
       name: "Google Meet",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/google-meet.png",
+      icon: "/assets/media/favicon/google-meet.png",
     },
     "Google Docs": {
       name: "Google Docs",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/google-docs.ico",
+      icon: "/assets/media/favicon/google-docs.ico",
     },
     "Google Slides": {
       name: "Google Slides",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/google-slides.ico",
+      icon: "/assets/media/favicon/google-slides.ico",
     },
     Wikipedia: {
       name: "Wikipedia",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/wikipedia.png",
+      icon: "/assets/media/favicon/wikipedia.png",
     },
     Britannica: {
       name: "Encyclopedia Britannica | Britannica",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/britannica.png",
+      icon: "/assets/media/favicon/britannica.png",
     },
     Ducksters: {
       name: "Ducksters",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/ducksters.png",
+      icon: "/assets/media/favicon/ducksters.png",
     },
     Minga: {
-      name: "Minga – Creating Amazing Schools",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/minga.png",
+      name: "/assets/media/favicon/minga.png",
     },
     "i-Ready Learning Games": {
       name: "Learning Games, i-Ready",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/i-ready.ico"
+      icon: "/assets/media/favicon/i-ready.ico"
     },
     "NoRedInk Home": {
       name: "Student Home | NoRedInk",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/noredink.png",
+      icon: "/assets/media/favicon/noredink.png",
     },
     Desmos: {
       name: "Desmos | Graphing Calculator",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/desmos.ico",
+      icon: "/assets/media/favicon/desmos.ico",
     },
     "Newsela Binder": {
       name: "Newsela | Binder",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/newsela.png",
+      icon: "/assets/media/favicon/newsela.png",
     },
     "Newsela Assignments": {
       name: "Newsela | Assignments",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/newsela.png",
+      icon: "/assets/media/favicon/newsela.png",
     },
     "Newsela Home": {
       name: "Newsela | Instructional Content Platform",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/newsela.png",
+      icon: "/assets/media/favicon/newsela.png",
     },
     "PowerSchool Sign In": {
       name: "Student and Parent Sign In",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/powerschool.png",
+      icon: "/assets/media/favicon/powerschool.png",
     },
     "PowerSchool Grades and Attendance": {
       name: "Grades and Attendance",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/powerschool.png",
+      icon: "/assets/media/favicon/powerschool.png",
     },
     "PowerSchool Teacher Comments": {
       name: "Teacher Comments",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/powerschool.png",
+      icon: "/assets/media/favicon/powerschool.png",
     },
     "PowerSchool Standards Grades": {
       name: "Standards Grades",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/powerschool.png",
+      icon: "/assets/media/favicon/powerschool.png",
     },
     "PowerSchool Attendance": {
       name: "Attendance",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/powerschool.png",
+      icon: "/assets/media/favicon/powerschool.png",
     },
-    Nearpod: { name: "Nearpod", icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/nearpod.png" },
+    Nearpod: { name: "Nearpod", icon: "/assets/media/favicon/nearpod.png" },
     StudentVUE: {
       name: "StudentVUE",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/studentvue.ico",
+      icon: "/assets/media/favicon/studentvue.ico",
     },
     "Quizlet Home": {
       name: "Flashcards, learning tools and textbook solutions | Quizlet",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/quizlet.webp",
+      icon: "/assets/media/favicon/quizlet.webp",
     },
     "Google Forms Locked Mode": {
       name: "Start your quiz",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/googleforms.png",
+      icon: "/assets/media/favicon/googleforms.png",
     },
     DeltaMath: {
       name: "DeltaMath",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/deltamath.png",
+      icon: "/assets/media/favicon/deltamath.png",
     },
     Kami: { name: "Kami", icon: "/assets/media/favicon/kami.png" },
     "GoGuardian Admin Restricted": {
       name: "Restricted",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/goguardian-lock.png",
+      icon: "/assets/media/favicon/goguardian-lock.png",
     },
     "GoGuardian Teacher Block": {
       name: "Uh oh!",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/goguardian.png",
+      icon: "/assets/media/favicon/goguardian.png",
     },
     "World History Encyclopedia": {
       name: "World History Encyclopedia",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/worldhistoryencyclopedia.png",
+      icon: "/assets/media/favicon/worldhistoryencyclopedia.png",
     },
     "Big Ideas Math Assignment Player": {
       name: "Assignment Player",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/bim.ico",
+      icon: "/assets/media/favicon/bim.ico",
     },
     "Big Ideas Math": {
       name: "Big Ideas Math",
-      icon: "https://dlcasto4.github.io/intersteller/assets/media/favicon/bim.ico",
+      icon: "/assets/media/favicon/bim.ico",
     },
   };
 
